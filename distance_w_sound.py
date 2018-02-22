@@ -4,7 +4,7 @@ import time
 def checkdist():
     GPIO.output(16, GPIO.HIGH)
     time.sleep(0.000015)
-    GPIO.output(16. GPIO.LOW)
+    GPIO.output(16, GPIO.LOW)
     while not GPIO.input(18):
 	pass
     t1 = time.time()
